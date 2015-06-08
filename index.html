@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+    <title>JavaScrpt: Project</title>
+  <link href="styles/main.css" rel="stylesheet" type="text/css">  
+</head>
+<body>
+    <div id="message"></div>
+    <script type="text/javascript">
+          function write(message) {
+          document.getElementById('message').innerHTML += message + '<br/>';
+          }
+          function writeHeader(message) {
+          document.getElementById('message').innerHTML += '<br><span style="font-weight: bold;">' + message + '</span><br>';
+          }
+          function cleanDoc(message) {document.getElementById('message').innerHTML="";}
+        function writeArray(arr) {
+            arr.forEach(function(item,index) {
+                write("Element " + index + " value: " + item);
+            });
+        }
+        function writeArrayValues(arr) {
+            arr.forEach(write);
+        }
+    </script>
+    <script src="http://172.16.1.145/underscore.js" type="text/javascript"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
+</body>
+</html>
