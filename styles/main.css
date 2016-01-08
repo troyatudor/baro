@@ -6,3 +6,6 @@ body {
 h1 {
   color: #53d328;
 }
+form {
+    margin-bottom: 16px;
+}
